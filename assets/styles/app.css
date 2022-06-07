@@ -67,5 +67,8 @@ nav .dropdown-menu[data-bs-popper] {
   nav{
     height : 20vh;
   }
-  
+}
+/*Main section 1 */
+.filterContainer{
+  height : 90vh;
 }
