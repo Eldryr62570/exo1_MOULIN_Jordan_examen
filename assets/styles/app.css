@@ -60,3 +60,12 @@ li {
 nav .dropdown-menu[data-bs-popper] {
   left: -10%;
 }
+@media (max-width : 500px) {
+  .menu-navbar{
+    flex-direction: column;
+  }
+  nav{
+    height : 20vh;
+  }
+  
+}
