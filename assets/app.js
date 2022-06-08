@@ -21,11 +21,22 @@ import "@fortawesome/fontawesome-free/js/all"
 const $ = require('jquery');
 import "slick-carousel/slick/slick"
 import "slick-carousel/slick/slick.css"
-const slickSettings = {
+
+var numberSlide = $('.js-slick-carousel > div').length;
+
+if(numberSlide < 5){
+    var prev = document.querySelector("#prev")
+    var next = document.querySelector("#next")
+    prev.remove();
+    next.remove();
+}
+
+
+var slickSettings = {
     arrows: true,
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 2,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
     responsive: [
@@ -71,4 +82,3 @@ $(window).on("load", ()=>{
 // reinitialization
 $('.js-slick-carousel').on('reInit', () => console.log('slick re-init fired'));
 $( window ).resize(handleResize);
-  
