@@ -58,7 +58,6 @@ const handleResize = () => {
   const carouselHeight = $('.js-slick-carousel').css('height')
   $('.card').css('height', carouselHeight);
 }
-
 // Initialization
 // const handleSlickInit = () => {
 //   console.log('slick init fired');
@@ -69,9 +68,7 @@ const handleResize = () => {
 $(window).on("load", ()=>{
     $('.js-slick-carousel').slick(slickSettings);
 })
-
 // reinitialization
 $('.js-slick-carousel').on('reInit', () => console.log('slick re-init fired'));
-
 $( window ).resize(handleResize);
   
