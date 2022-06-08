@@ -196,11 +196,11 @@ nav .dropdown-menu[data-bs-popper] {
   overflow: hidden;
 }
 .prev{
-  position: absolute;
+  position: relative;
   left:0;
+  
 }
 .next{
-  position :absolute;
+  position :relative;
   right:0;
-  
 }
