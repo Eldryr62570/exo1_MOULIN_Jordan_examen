@@ -197,10 +197,10 @@ nav .dropdown-menu[data-bs-popper] {
 }
 .prev{
   position: relative;
-  left:0;
-  
 }
 .next{
   position :relative;
-  right:0;
+}
+.separatorBlank{
+  width: 50px;
 }

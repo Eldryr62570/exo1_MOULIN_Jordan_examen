@@ -11,7 +11,7 @@
          
         
     </head>
-    <body>
+    <body class="bg-blue3">
         {% block navbar %}
             {% include "_partials/_navbar.html.twig" %}
         {% endblock %}
@@ -19,7 +19,7 @@
         {% block footer %}
             {% include "_partials/_footer.html.twig" %}
         {% endblock %}
-        
+
     {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}

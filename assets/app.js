@@ -66,7 +66,10 @@ const handleResize = () => {
 // }
 
 // $('.js-slick-carousel').on('init', handleSlickInit);
-$('.js-slick-carousel').slick(slickSettings);
+$(window).on("load", ()=>{
+    $('.js-slick-carousel').slick(slickSettings);
+})
+
 // reinitialization
 $('.js-slick-carousel').on('reInit', () => console.log('slick re-init fired'));
 
